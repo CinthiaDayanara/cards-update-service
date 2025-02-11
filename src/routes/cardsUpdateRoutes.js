@@ -1,8 +1,11 @@
 const express = require("express");
-const { updateCard } = require("../controllers/cardsUpdateController");
-
+const { updateCard, getCards } = require("../controllers/cardsController");
 const router = express.Router();
 
-router.put("/:id", updateCard);
+// Ruta para obtener todas las tarjetas
+router.get("/", getCards);
+
+// Ruta para actualizar una tarjeta
+router.put("/:id", updateCard);  // Usamos PUT para actualizar la tarjeta por ID
 
 module.exports = router;
