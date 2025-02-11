@@ -1,6 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const cardsRoutes = require("./src/routes/cardsRoutes");
+const cardsRoutes = require("./src/routes/cardsUpdateRoutes");
 const sequelize = require("./src/config/database");
 
 const app = express();

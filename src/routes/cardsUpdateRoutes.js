@@ -1,5 +1,5 @@
 const express = require("express");
-const { updateCard, getCards } = require("../controllers/cardsController");
+const { updateCard, getCards } = require("../controllers/cardsUpdateController");
 const router = express.Router();
 
 // Ruta para obtener todas las tarjetas
